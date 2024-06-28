@@ -1,0 +1,54 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    height: 40px;
+}
+
+.main-header {
+    background-color: #b1f5f5;
+    padding: 100px 20px;
+}
+
+.container {
+    margin-top: 40px;
+}
+
+.carousel-inner img {
+    height: 600px;
+}
+
+.flexgrid {
+    margin-top: 40px;
+}
+
+.flexgrid .flex-fill {
+    border: 1px solid #ff0000;
+    padding: 20px;
+    margin: 10px;
+}
+
+.social-media a {
+    font-size: 30px;
+    margin: 0 10px;
+    color: #333;
+}
+
+.dark-mode-toggle {
+    margin: 20px;
+}
+
+.dark-mode {
+    background-color: #000000;
+    color: #fff;
+}
+
+.dark-mode .navbar, .dark-mode .main-header, .dark-mode .container, .dark-mode .flexgrid {
+    background-color: #000000;
+    
+}
+
+.dark-mode .social-media a {
+    color: #fff;
+}

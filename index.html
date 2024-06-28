@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Una página web sobre las finanzas, con consejos y recursos para mejorar tu gestión financiera.">
+    <meta name="keywords" content="finanzas, dinero, gestión financiera, ahorro, inversión">
+    <meta name="author" content="YORDI SANCHEZ; 21-0834">
+    <title>Finanzas Inteligentes</title>
+    <link rel="icon" href="img/Money100.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.4.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="img/money.jpg" alt="Logo" class="logo"> Finanzas Inteligentes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#consejos">Consejos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#carrusel">Galería</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contáctenos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección principal -->
+    <header class="main-header text-center" id="inicio">
+        <h1>Bienvenido a Finanzas Inteligentes</h1>
+        <p>Tu fuente de información para mejorar tu gestión financiera</p>
+        <button class="btn btn-primary" onclick="showAlert()">Más Información</button>
+    </header>
+
+    <!-- Consejos -->
+    <section id="consejos" class="container">
+        <h2>Consejos Financieros</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Ahorro</h3>
+                <p>Aprende a ahorrar de manera efectiva para asegurar tu futuro.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Inversión</h3>
+                <p>Descubre las mejores estrategias de inversión para maximizar tus ganancias.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Presupuesto</h3>
+                <p>Organiza tu presupuesto para mantener tus finanzas en orden.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrusel -->
+    <section id="carrusel" class="container">
+        <h2>Galería</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/Money2.jpg" class="d-block w-100" alt="..." ali>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Money3.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Money4.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- FlexGrid -->
+    <section id="flexgrid" class="container">
+        <h2>Recursos Adicionales</h2>
+        <div class="d-flex flex-wrap">
+            <div class="p-2 flex-fill">
+                <h4>Libros</h4>
+                <ul>
+                    <li>El Hombre Más Rico de Babilonia</li>
+                    <li>Padre Rico, Padre Pobre</li>
+                    <li>Los Secretos de la Mente Millonaria</li>
+                </ul>
+            </div>
+            <div class="p-2 flex-fill">
+                <h4>Blogs</h4>
+                <ul>
+                    <li>El Blog Salmón</li>
+                    <li>Inversor Inteligente</li>
+                    <li>Finanzas Personales</li>
+                </ul>
+            </div>
+            <div class="p-2 flex-fill">
+                <h4>Podcasts</h4>
+                <ul>
+                    <li>Finanzas y Algo Más</li>
+                    <li>Invirtiendo con Éxito</li>
+                    <li>La Bolsa y la Vida</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="container">
+        <h2>Contáctenos</h2>
+        <form id="contactForm" onsubmit="sendEmail(event)">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea class="form-control" id="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Redes Sociales -->
+    <section class="social-media">
+        <div class="container text-center">
+            <h4>Síguenos en las redes sociales</h4>
+            <a href="https://facebook.com" class="bi bi-facebook"></a>
+            <a href="https://x.com/?lang=es" class="bi bi-twitter"></a>
+            <a href="https://www.instagram.com" class="bi bi-instagram"></a>
+            <a href="https://www.linkedin.com/in/yosanchezf/" class="bi bi-linkedin"></a>
+        </div>
+    </section>
+
+    <!-- Botón de Modo Oscuro -->
+    <div class="dark-mode-toggle text-center">
+        <button class="btn btn-dark" onclick="toggleDarkMode()">Modo Oscuro</button>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
