@@ -1,11 +1,14 @@
+/* Uso de Google Fonts */
 body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* Estilos para el logo */
 .logo {
     height: 40px;
 }
 
+/* Estilo para el header principal */
 .main-header {
     background-color: #b1f5f5;
     padding: 100px 20px;
@@ -15,7 +18,8 @@ body {
     margin-top: 40px;
 }
 
-.carousel-inner img {
+/* Imágenes responsivas en el carrusel */
+.carrusel img {
     height: 600px;
 }
 
@@ -29,12 +33,14 @@ body {
     margin: 10px;
 }
 
-.social-media a {
+/* Estilos para los iconos de redes sociales en el footer */
+.Redsocial a {
     font-size: 30px;
     margin: 0 10px;
     color: #333;
 }
 
+/* Estilos para el modo negro */
 .dark-mode-toggle {
     margin: 20px;
 }

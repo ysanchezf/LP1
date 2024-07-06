@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Codificación de caracteres -->
     <meta charset="UTF-8">
+    <!-- Metadatos para mejorar la búsqueda en internet -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Una página web sobre las finanzas, con consejos y recursos para mejorar tu gestión financiera.">
     <meta name="keywords" content="finanzas, dinero, gestión financiera, ahorro, inversión">
     <meta name="author" content="YORDI SANCHEZ; 21-0834">
     <title>Finanzas Inteligentes</title>
+    <!-- Icono de la página -->
     <link rel="icon" href="img/Money100.ico" type="image/x-icon">
+    <!-- Uso de Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Uso de Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Uso de Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.4.1/font/bootstrap-icons.css">
+     <!-- Estilos personalizados en un archivo CSS separado -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Logo de la página -->
         <a class="navbar-brand" href="#"><img src="img/money.jpg" alt="Logo" class="logo"> Finanzas Inteligentes</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -40,12 +48,13 @@
 
     <!-- Sección principal -->
     <header class="main-header text-center" id="inicio">
-        <h1>Bienvenido a Finanzas Inteligentes</h1>
+        <h1 class="Efectocolor">Bienvenido a Finanzas Inteligentes</h1>
         <p>Tu fuente de información para mejorar tu gestión financiera</p>
+        <!-- Botón para activar la alerta -->
         <button class="btn btn-primary" onclick="showAlert()">Más Información</button>
     </header>
 
-    <!-- Consejos -->
+     <!-- párrafos -->
     <section id="consejos" class="container">
         <h2>Consejos Financieros</h2>
         <div class="row">
@@ -64,8 +73,8 @@
         </div>
     </section>
 
-    <!-- Carrusel -->
-    <section id="carrusel" class="container">
+    <!-- Carrusel de imágenes -->
+    <section id="carousel-inner" class="container">
         <h2>Galería</h2>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -75,6 +84,7 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
+                     <!-- Imágenes responsivas -->
                     <img src="img/Money2.jpg" class="d-block w-100" alt="..." ali>
                 </div>
                 <div class="carousel-item">
@@ -92,6 +102,7 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Siguiente</span>
             </a>
+        
         </div>
     </section>
 
@@ -102,31 +113,32 @@
             <div class="p-2 flex-fill">
                 <h4>Libros</h4>
                 <ul>
-                    <li>El Hombre Más Rico de Babilonia</li>
-                    <li>Padre Rico, Padre Pobre</li>
-                    <li>Los Secretos de la Mente Millonaria</li>
+                    <li class="Efectocolor">El Hombre Más Rico de Babilonia</li>
+                    <li class="Efectocolor">Padre Rico, Padre Pobre</li>
+                    <li class="Efectocolor">Los Secretos de la Mente Millonaria</li>
                 </ul>
             </div>
             <div class="p-2 flex-fill">
                 <h4>Blogs</h4>
                 <ul>
-                    <li>El Blog Salmón</li>
-                    <li>Inversor Inteligente</li>
-                    <li>Finanzas Personales</li>
+                    <li class="Efectocolor">El Blog Salmón</li>
+                    <li class="Efectocolor">Inversor Inteligente</li>
+                    <li class="Efectocolor">Finanzas Personales</li>
                 </ul>
             </div>
             <div class="p-2 flex-fill">
                 <h4>Podcasts</h4>
                 <ul>
-                    <li>Finanzas y Algo Más</li>
-                    <li>Invirtiendo con Éxito</li>
-                    <li>La Bolsa y la Vida</li>
+                    <li class="Efectocolor">Finanzas y Algo Más</li>
+                    <li class="Efectocolor">Invirtiendo con Éxito</li>
+                    <li class="Efectocolor">La Bolsa y la Vida</li>
                 </ul>
             </div>
+            
         </div>
     </section>
 
-    <!-- Contacto -->
+    <!-- Formulario de contacto -->
     <section id="contacto" class="container">
         <h2>Contáctenos</h2>
         <form id="contactForm" onsubmit="sendEmail(event)">
@@ -144,11 +156,27 @@
             </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
+        <br>
+        <p><a class="btn btn-info" href="mailto:ys21-0834@unphu.edu.do">Click para enviar un email</a></p>
     </section>
 
-    <!-- Redes Sociales -->
+    <!-- Acceso a las redes sociales -->
     <section class="social-media">
         <div class="container text-center">
+            <!-- Sección de Enlaces de Interés -->
+            <section id="enlaces" class="mt-5">
+                <h2 >Enlaces de Interés</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/S4uVsDhjyl4?si=d75rN6WBQ5oCCPBD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-6">
+                        <iframe width="100%" height="315" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15135.809793041037!2d-69.948334!3d18.485813!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89f362e578d3%3A0x19d59fe09af95898!2sUniversidad%20Nacional%20Pedro%20Henr%C3%ADquez%20Ure%C3%B1a%20(UNPHU)!5e0!3m2!1ses!2sdo!4v1720228443799!5m2!1ses!2sdo" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+            <br>
+
             <h4>Síguenos en las redes sociales</h4>
             <a href="https://facebook.com" class="bi bi-facebook"></a>
             <a href="https://x.com/?lang=es" class="bi bi-twitter"></a>
@@ -165,6 +193,7 @@
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <!-- Uso de Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </body>
